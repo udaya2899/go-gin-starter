@@ -20,11 +20,11 @@ type ServerConfiguration struct {
 
 // DatabaseConfiguration exported
 type DatabaseConfiguration struct {
-	DBHost     string
-	DBPort     int
-	DBName     string
-	DBUser     string
-	DBPassword string
+	Host     string
+	Port     int
+	Name     string
+	User     string
+	Password string
 }
 
 // New initializes a new Configuration from the ENV variables
