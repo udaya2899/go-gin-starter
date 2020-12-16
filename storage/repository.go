@@ -18,3 +18,5 @@ func New(db *sql.DB) *Repository {
 func (r *Repository) DoSomething() error {
 	return nil
 }
+
+// use sqlc for generating db access code in Go
