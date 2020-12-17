@@ -6,11 +6,24 @@ An opinionated starter for Go Backend projects using:
 * `gin-gonic/gin` as the REST framework
 * `logrus` for logging
 * `viper` for configs
-
+* `Docker` for containerization
+  
 To be added:
 * `sqlc` for type-safe SQL Go code generation
 * `golang-migrate/migrate` for migration
-* `Docker` for containerization
+* `jwt` authentication
+* `casbin` authorization
+* `prometheus` monitoring
+
+### Docker support
+
+Run `make docker-build-run` to build the command and run the container. Note that the port is set as 8080 by default.
 
 
-More documentation to follow
+Verify by checking `localhost:8080/ping`. You should receive a `pong`
+
+### Contributing
+
+Feel free to raise a PR with one of the features from "To be added" section.
+
+If you want a new feature PR, raise an issue to discuss about it.
