@@ -7,6 +7,8 @@ import (
 	"github.com/spf13/viper"
 )
 
+var Config *Configuration
+
 // Configuration exported
 type Configuration struct {
 	Server   ServerConfiguration
@@ -15,7 +17,8 @@ type Configuration struct {
 
 // ServerConfiguration exported
 type ServerConfiguration struct {
-	Port int
+	Port      int
+	JWTSecret string
 }
 
 // DatabaseConfiguration exported
@@ -28,7 +31,7 @@ type DatabaseConfiguration struct {
 }
 
 // New initializes a new Configuration from the ENV variables
-func New() *Configuration {
+func init() {
 	viper.SetConfigName("config")
 
 	viper.AddConfigPath(".")
@@ -36,8 +39,6 @@ func New() *Configuration {
 	viper.AutomaticEnv()
 
 	viper.SetConfigType("yml")
-
-	var config Configuration
 
 	if err := viper.ReadInConfig(); err != nil {
 		panic(fmt.Errorf("fatal error while reading config file: %v", err))
@@ -48,9 +49,7 @@ func New() *Configuration {
 		fmt.Printf("Configuration file changed")
 	})
 
-	if err := viper.Unmarshal(&config); err != nil {
+	if err := viper.Unmarshal(&Config); err != nil {
 		fmt.Printf("Unable to decode config file to struct, err: %v", err)
 	}
-
-	return &config
 }

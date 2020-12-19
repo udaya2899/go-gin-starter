@@ -13,6 +13,8 @@ func New(repository *storage.Repository) *gin.Engine {
 
 	r.GET("/ping", getStatus)
 
+	setAuthRoutes(r)
+
 	return r
 }
 

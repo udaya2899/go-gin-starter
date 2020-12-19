@@ -3,6 +3,7 @@ module github.com/udaya2899/go-gin-starter
 go 1.15
 
 require (
+	github.com/appleboy/gin-jwt/v2 v2.6.4
 	github.com/fsnotify/fsnotify v1.4.9
 	github.com/gin-gonic/gin v1.6.3
 	github.com/go-playground/validator/v10 v10.4.1 // indirect

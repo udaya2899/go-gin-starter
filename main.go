@@ -30,7 +30,7 @@ func main() {
 }
 
 func run() error {
-	config := configuration.New()
+	config := configuration.Config
 
 	db, err := connection.NewConnection(config.Database)
 	if err != nil {
