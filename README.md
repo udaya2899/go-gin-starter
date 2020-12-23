@@ -1,6 +1,10 @@
 ## `go-gin-starter`
 
-![build](https://github.com/udaya2899/go-gin-starter/workflows/Go/badge.svg) [![Go Reference](https://pkg.go.dev/badge/github.com/udaya2899/go-gin-starter.svg)](https://pkg.go.dev/github.com/udaya2899/go-gin-starter)
+![build](https://github.com/udaya2899/go-gin-starter/workflows/Go/badge.svg) [![Go Reference](https://pkg.go.dev/badge/github.com/udaya2899/go-gin-starter.svg)](https://pkg.go.dev/github.com/udaya2899/go-gin-starter) [![made-with-Go](https://img.shields.io/badge/Made%20with-Go-1f425f.svg)](http://golang.org)
+
+[![license](https://img.shields.io/github/license/udaya2899/go-gin-starter)](https://github.com/udaya2899/go-gin-starter/blob/master/LICENSE)
+
+[![stars](https://img.shields.io/github/stars/udaya2899/go-gin-starter?style=social)](https://github.com/udaya2899/go-gin-starter)
 
 An opinionated starter for Go Backend projects using:
 * `gin-gonic/gin` as the REST framework
