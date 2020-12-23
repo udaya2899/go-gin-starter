@@ -1,6 +1,6 @@
 ## `go-gin-starter`
 
-![Go](https://github.com/udaya2899/go-gin-starter/workflows/Go/badge.svg) [![Go Reference](https://pkg.go.dev/badge/github.com/udaya2899/go-gin-starter.svg)](https://pkg.go.dev/github.com/udaya2899/go-gin-starter)
+![build](https://github.com/udaya2899/go-gin-starter/workflows/Go/badge.svg) [![Go Reference](https://pkg.go.dev/badge/github.com/udaya2899/go-gin-starter.svg)](https://pkg.go.dev/github.com/udaya2899/go-gin-starter)
 
 An opinionated starter for Go Backend projects using:
 * `gin-gonic/gin` as the REST framework
