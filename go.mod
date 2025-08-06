@@ -2,7 +2,7 @@ module github.com/udaya2899/go-gin-starter
 
 go 1.23.0
 
-toolchain go1.24.5
+toolchain go1.24.6
 
 require (
 	github.com/fsnotify/fsnotify v1.9.0
